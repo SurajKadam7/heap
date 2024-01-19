@@ -17,7 +17,7 @@ func main() {
 		return heap[parent].Score < heap[child].Score
 	}
 
-	minHeap := heap.New[Rank](minHeapFunc, 0)
+	minHeap := heap.New[Rank](minHeapFunc)
 
 	minHeap.Push(Rank{
 		Name:  "ABC",

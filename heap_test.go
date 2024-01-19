@@ -36,7 +36,7 @@ func test[T Comparables](h *heap[T], f HeapFunc[T], heapType string, size int) e
 
 func getMinHeap[T int](size int) (*heap[T], HeapFunc[T]) {
 	MinHeap := func(heap []T, parent, child int) bool { return heap[parent] <= heap[child] }
-	hMin := New[T](MinHeap, 0)
+	hMin := New[T](MinHeap)
 	for i := 0; i < size; i++ {
 		hMin.Push(getRandomInt[T]())
 	}
@@ -45,7 +45,7 @@ func getMinHeap[T int](size int) (*heap[T], HeapFunc[T]) {
 
 func getMaxHeap[T int](size int) (*heap[T], HeapFunc[T]) {
 	MaxHeap := func(heap []T, parent, child int) bool { return heap[parent] >= heap[child] }
-	hMax := New[T](MaxHeap, 0)
+	hMax := New[T](MaxHeap)
 	for i := 0; i < size; i++ {
 		hMax.Push(getRandomInt[T]())
 	}
