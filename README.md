@@ -11,6 +11,12 @@ your specific requirements.
 go get github.com/SurajKadam7/heap
 ```
 
+## Reference Video
+
+Watch this [YouTube video](https://www.youtube.com/watch?v=HqPJF2L5h9U) for a detailed
+understanding of heap
+
+
 ## Example : 
 ```go 
 package main
